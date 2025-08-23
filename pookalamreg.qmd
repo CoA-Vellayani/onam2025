@@ -99,6 +99,8 @@ toc: false
 ``` 
 ## Fill the form for registration {.unnumbered}  
 
+Last date of registration: August 26, 11:00 am  
+
 ```{=html}
 <!-- Embed Google Form — responsive + mobile-friendly -->
 <div class="form-embed">
