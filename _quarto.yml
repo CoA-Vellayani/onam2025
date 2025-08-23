@@ -9,30 +9,34 @@ project:
     - CNAME
 website:
   title: "Onam 2025"
-  favicon: www/logo.png
+  favicon: www/logokau.webp
   navbar:
     background: "#dae600"
-    logo: www/logo.png
+    logo: www/logokau.webp
     search: true
     left:
       - text: Home
         href: index.qmd
+      - text: Registrations
+        menu:
+          - text: Pookalam Registration
+            href: pookalamreg.qmd  
   page-footer:
     left: |
-      © 2025 RAISINS by <a href="https://www.statoberry.com/">Statoberry LLP</a><br>
-      <img src="www/statologo.png" alt="Statoberry Logo" style="height:25px; padding: 5px 10px 5px 10px; margin-bottom: 5px;">
-    center:
-      - icon: youtube
-        href: https://www.youtube.com/@statoberry
-      - icon: facebook
-        href: https://facebook.com/statoberry
-      - icon: twitter
-        href: https://twitter.com/statoberry
-      - icon: linkedin
-        href: https://linkedin.com/company/statoberry
-      - icon: instagram
-        href: https://instagram.com/statoberry
-    background: "#f0ddef"
+      © 2025 by <a href="https://coavellayani.kau.in/">College of Agriculture, Vellayani</a><br>
+      <img src="www/logokau.webp" alt="KAU Logo" style="height:25px; padding: 5px 10px 5px 10px; margin-bottom: 5px;">
+    # center:
+    #   - icon: youtube
+    #     href: https://www.youtube.com/@statoberry
+    #   - icon: facebook
+    #     href: https://facebook.com/statoberry
+    #   - icon: twitter
+    #     href: https://twitter.com/statoberry
+    #   - icon: linkedin
+    #     href: https://linkedin.com/company/statoberry
+    #   - icon: instagram
+    #     href: https://instagram.com/statoberry
+    background: "#8c6700"
 format:
   html:
     theme:

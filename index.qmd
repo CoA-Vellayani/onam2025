@@ -43,52 +43,124 @@
   }
 </style>
 ```   
+പൂക്കളം മത്സരം രാവിലെ 8:00 മുതൽ 11:00 മണി വരെയാണ് . ഓരോ ടീമുകൾക്കും താഴെ രജിസ്റ്റർ ചെയ്യാവുന്നതാണ്👇
+  
+Pookalam competition is from 8:00 AM to 11:00 AM. The participating team should register by clicking below 👇  
+
 
 ```{=html}  
-<!-- Pookalam image hover effect with REGISTRATION text -->
-<div class="pookalam-hover">
-  <img src="www/pookalam.png" alt="Onam Pookalam" class="pookalam-img">
-  <div class="overlay">REGISTRATION</div>
-</div>
+<!-- Responsive Pookalam card — mobile-friendly (Statoberry style) -->
+<a class="pookalam-card" href="pookalamreg.html" aria-label="Open registration">
+  <picture>
+    <!-- serve webp if available, fallback to png/jpg -->
+    <source srcset="www/pookalam.webp" type="image/webp">
+    <img
+      class="pookalam-img"
+      src="www/pookalam.webp"
+      alt="Onam pookalam"
+      loading="lazy"
+      decoding="async"
+      sizes="(max-width: 480px) 96vw, (max-width: 1024px) 60vw, 480px">
+  </picture>
+  <span class="pookalam-badge" role="button" tabindex="0">REGISTRATION</span>
+</a>
 
 <style>
-  .pookalam-hover {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: 0 8px 24px rgba(0,0,0,.15);
+  :root{
+    --sb-ink:#1b1b1b;
+    --sb-brand:#6b46c1;         /* statoberry purple vibe */
+    --sb-ink-on:#ffffff;
+    --sb-card:#ffffff;
+    --sb-shadow:0 10px 30px rgba(0,0,0,.12);
+    --sb-radius:16px;
   }
 
-  .pookalam-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    transition: transform .4s ease;
+  .pookalam-card{
+    position:relative;
+    display:block;
+    width:min(96vw, 520px);
+    border-radius:var(--sb-radius);
+    overflow:hidden;
+    text-decoration:none;
+    background:var(--sb-card);
+    box-shadow:var(--sb-shadow);
+    isolation:isolate;
+    /* maintain pleasant aspect on mobile even before image loads */
+    aspect-ratio: 16 / 10;
   }
 
-  .pookalam-hover:hover .pookalam-img {
-    transform: scale(1.05);
+  .pookalam-img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transform:scale(1.001); /* avoids subpixel gaps on some browsers */
+    transition: transform .45s ease;
+    will-change: transform;
   }
 
-  .overlay {
-    position: absolute;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Noto Sans Malayalam", system-ui, sans-serif;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: white;
-    background: rgba(0,0,0,0.55);
-    opacity: 0;
-    transition: opacity .4s ease;
+  /* gradient veil for legible badge on bright photos (always on mobile) */
+  .pookalam-card::after{
+    content:"";
+    position:absolute; inset:0;
+    background: linear-gradient(180deg, rgba(0,0,0,.10) 0%, rgba(0,0,0,.35) 75%, rgba(0,0,0,.55) 100%);
+    pointer-events:none;
+    opacity:.55;
+    transition: opacity .35s ease;
   }
 
-  .pookalam-hover:hover .overlay {
-    opacity: 1;
+  /* registration badge (touch friendly) */
+  .pookalam-badge{
+    position:absolute;
+    left:50%; bottom:14px;
+    transform:translateX(-50%);
+    display:inline-flex;
+    align-items:center; justify-content:center;
+    padding:.70rem 1.1rem;
+    border-radius:999px;
+    font:600 0.98rem/1 system-ui, -apple-system, "Segoe UI", Inter, Roboto, Arial, sans-serif;
+    letter-spacing:.02em;
+    color:var(--sb-ink-on);
+    background:var(--sb-brand);
+    box-shadow:0 6px 16px rgba(107,70,193,.35);
+    border:1px solid rgba(255,255,255,.18);
+    transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+    user-select:none;
+  }
+
+  /* bigger tap target on small screens */
+  @media (max-width: 520px){
+    .pookalam-badge{ padding:.85rem 1.2rem; font-size:1.02rem; bottom:12px; }
+  }
+
+  /* hover/focus states (desktop) */
+  .pookalam-card:hover .pookalam-img,
+  .pookalam-card:focus-visible .pookalam-img{ transform:scale(1.05); }
+  .pookalam-card:hover::after,
+  .pookalam-card:focus-visible::after{ opacity:.35; }
+  .pookalam-card:hover .pookalam-badge,
+  .pookalam-card:focus-visible .pookalam-badge{
+    box-shadow:0 10px 26px rgba(107,70,193,.45);
+    transform:translateX(-50%) translateY(-1px);
+  }
+
+  /* optional: show center overlay text on larger screens when hovering */
+  @media (hover:hover) and (pointer:fine){
+    .pookalam-badge{
+      bottom:16px;
+    }
+    .pookalam-card:hover .pookalam-badge{
+      bottom:50%; transform:translate(-50%, 50%); /* center on hover */
+      padding:1rem 1.4rem; font-size:1.05rem;
+    }
+  }
+
+  /* accessibility: respect reduced motion */
+  @media (prefers-reduced-motion: reduce){
+    .pookalam-img,
+    .pookalam-card::after,
+    .pookalam-badge{ transition:none !important; }
   }
 </style>
 ```

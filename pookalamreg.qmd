@@ -1,0 +1,86 @@
+---
+title: "Pookalam Regsitration"
+---  
+
+ഓരോ ടീമും താഴെ നൽകിയിരിക്കുന്ന ഫോം ഉപയോഗിച്ച് രജിസ്റ്റർ ചെയ്യേണ്ടതാണ്. ഓരോ ടീമിലും **10 അംഗങ്ങൾ** ഉണ്ടായിരിക്കണം, കൂടാതെ ഓരോ അംഗത്തിന്റെ **പേര്** എന്നിവയും നൽകണം. **ടീം ക്യാപ്റ്റന്റെ പേര് ആദ്യം എഴുതണം**, കൂടാതെ ക്യാപ്റ്റന്റെ **മൊബൈൽ നമ്പർ ശരിയായതായിരിക്കണം**.
+
+രജിസ്ട്രേഷൻ ചെയ്യാൻ **കോളേജ് ഓഫ് അഗ്രികൾച്ചർ, വെള്ളയാണി**യിലെ ജീവനക്കാർ, സ്റ്റാഫ്, അധ്യാപകർ, വിദ്യാർത്ഥികൾ എന്നിവർക്കു മാത്രമേ അനുവാദമുള്ളൂ. ടീമുകൾ നിങ്ങളുടെ ഇഷ്ടാനുസരണം രൂപീകരിക്കാവുന്നതാണ്. **മത്സരത്തിന്റെ നിയമങ്ങൾ ഉടൻ അറിയിച്ചുതരുന്നതായിരിക്കും**, രജിസ്റ്റർ ചെയ്ത ടീമുകൾക്ക് ബന്ധപ്പെട്ട വിവരം നൽകും.
+  
+Each team is required to register using the form provided below. Every team must consist of 10 members and should submit both the name and phone number of each participant. The team captain’s name must be entered first, and the captain’s mobile number must be valid for communication purposes.
+
+Registration is strictly limited to employees, staff, teachers, and students of the College of Agriculture, Vellayani. Teams can be formed in any manner according to your interest and convenience. The rules of the competition will be updated soon, and all registered teams will be notified accordingly.  
+
+Click below to register  
+
+രജിസ്റ്റർ ചെയ്യാൻ താഴെ ക്ലിക്ക് ചെയ്യുക 👇  
+
+```{=html}
+<!-- Embed Google Form — responsive + mobile-friendly -->
+<div class="form-embed">
+  <iframe 
+    src="https://docs.google.com/forms/d/e/1FAIpQLSeNLZFZpJ_ZxXMV4Ij3wOMWBHLiwcUkuP7qeWbmCL5lRExicw/viewform?embedded=true" 
+    frameborder="0" 
+    marginheight="0" 
+    marginwidth="0" 
+    loading="lazy" 
+    allowfullscreen>
+    Loading…
+  </iframe>
+</div>
+
+<style>
+  .form-embed{
+    position:relative;
+    width:100%;
+    max-width:800px;   /* centers nicely on large screens */
+    margin-inline:auto;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 8px 24px rgba(0,0,0,.08);
+    background:#fff;
+  }
+  .form-embed iframe{
+    display:block;
+    width:100%;
+    height:90vh;       /* fills viewport height for mobile */
+    min-height:720px;  /* fallback for desktops */
+    border:0;
+  }
+  @media (max-width:600px){
+    .form-embed iframe{ height:100vh; min-height:600px; }
+  }
+</style>
+```  
+
+```{=html}  
+<!-- Register Button -->
+<div class="register-btn-wrap">
+  <a href="pookalamrules.html" class="register-btn">നിയമങ്ങൾ കാണാൻ ക്ലിക്ക് ചെയ്യുക/Rules</a>
+</div>
+
+<style>
+  .register-btn-wrap{
+    text-align:center;
+    margin:2rem 0;
+  }
+  .register-btn{
+    display:inline-block;
+    padding:.9rem 1.6rem;
+    font-size:1.05rem;
+    font-weight:600;
+    color:#fff;
+    background:linear-gradient(135deg,#6b46c1,#9f7aea);
+    border-radius:999px;
+    text-decoration:none;
+    box-shadow:0 6px 18px rgba(111,61,204,.3);
+    transition:all .25s ease;
+  }
+  .register-btn:hover,
+  .register-btn:focus{
+    background:linear-gradient(135deg,#5a38a8,#7d5ac9);
+    box-shadow:0 8px 24px rgba(111,61,204,.45);
+    transform:translateY(-2px);
+  }
+</style>
+```  
+
