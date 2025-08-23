@@ -1,0 +1,62 @@
+---
+title: "Home"
+image: assets/hero.jpg
+---
+
+::::: hero
+::: hero-copy
+```         
+<span class="tag">Celebrate together · community · joy</span>
+<h1>onam 2025</h1>
+<p>join us for a colourful celebration featuring pookkalam, thiruvathira, vadam vali, onappattu, and a grand onasadya. bring your friends and family and be part of the festivities.</p>
+
+<div class="countdown">countdown: <span id="countdown">loading…</span></div>
+
+<p style="margin-top:16px;">
+  <a class="btn-onam" href="registration.qmd">register now</a>
+  <a class="btn-onam" style="background:linear-gradient(135deg,var(--gold),var(--maroon));" href="schedule.qmd">view schedule</a>
+</p>
+```
+:::
+
+::: {.hero-media aria-label="onam hero image"}
+:::
+:::::
+
+::: pookkalam
+:::
+
+## highlights
+
+:::::::: grid
+:::: {.g-col-12 .g-col-md-4}
+::: cardish
+**pookkalam contest**\
+teams showcase creative floral carpets. all materials should be natural.
+:::
+::::
+
+:::: {.g-col-12 .g-col-md-4}
+::: cardish
+**thiruvathira performance**\
+experience the grace and rhythm of traditional dance.
+:::
+::::
+
+::: {.g-col-12 .g-col-md-4}
+\<div class="cardish"} **onasadya**\
+a sumptuous traditional feast on banana leaves. prior registration required.
+
+</div>
+:::
+::::::::
+
+## quick links
+
+-   🗓️ [full schedule](schedule.qmd)
+-   🎭 [event details](events.qmd)
+-   📝 [registration](registration.qmd)
+-   📍 [venue & map](venue.qmd)
+-   🖼️ [gallery](gallery.qmd)
+-   🤝 [sponsors](sponsors.qmd)
+-   ✉️ [contact](contact.qmd)

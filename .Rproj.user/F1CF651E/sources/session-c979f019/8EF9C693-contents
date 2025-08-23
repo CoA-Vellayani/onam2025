@@ -1,0 +1,94 @@
+```{=html}
+<div style="text-align: center; margin-bottom: 1em;">
+  <img src="www/banner.webp"
+       alt="Banner"
+       style="width: 100%; max-height: 200px; object-fit: cover;">
+</div>
+```
+```{=html}
+<!-- Onam welcome marquee (HTML-only block for Quarto) -->
+<div class="onam-marquee" role="region" aria-label="Onam welcome">
+  <div class="onam-track">
+    <span>🌼കോളേജ് ഓഫ് അഗ്രികൾച്ചർ വെള്ളായണി സംഘടിപ്പിക്കുന്ന സംയുക്ത ഓണാഘോഷ പരിപാടിയിലേക് സ്വാഗതം 🌼</span>
+    <span aria-hidden="true">🌼കോളേജ് ഓഫ് അഗ്രികൾച്ചർ വെള്ളായണി സംഘടിപ്പിക്കുന്ന സംയുക്ത ഓണാഘോഷ പരിപാടിയിലേക് സ്വാഗതം  </span>
+  </div>
+</div>
+
+<style>
+  .onam-marquee{
+    overflow:hidden;
+    border-radius:12px;
+    border:1px solid #e7e7e7;
+    background:
+      radial-gradient(600px 200px at 85% -20%, #fffbe6 0%, transparent 60%),
+      linear-gradient(90deg,#fffdf4,#fff);
+    box-shadow:0 8px 24px rgba(0,0,0,.06);
+  }
+  .onam-track{
+    display:flex;
+    gap:3rem;
+    white-space:nowrap;
+    will-change: transform;
+    animation:onam-scroll 5s linear infinite;
+    padding:.85rem 1rem;
+    font-family: "Noto Sans Malayalam", system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", sans-serif;
+    font-weight:700;
+    font-size:clamp(1rem, 2.4vw, 1.35rem);
+    color:#1a5c2a;
+  }
+  .onam-track:hover{ animation-play-state: paused; } /* pause on hover */
+  @keyframes onam-scroll{
+    from{ transform: translateX(0); }
+    to  { transform: translateX(-50%); } /* duplicate text for seamless loop */
+  }
+</style>
+```   
+
+```{=html}  
+<!-- Pookalam image hover effect with REGISTRATION text -->
+<div class="pookalam-hover">
+  <img src="pookalam.jpg" alt="Onam Pookalam" class="pookalam-img">
+  <div class="overlay">REGISTRATION</div>
+</div>
+
+<style>
+  .pookalam-hover {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0,0,0,.15);
+  }
+
+  .pookalam-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: transform .4s ease;
+  }
+
+  .pookalam-hover:hover .pookalam-img {
+    transform: scale(1.05);
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Noto Sans Malayalam", system-ui, sans-serif;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: white;
+    background: rgba(0,0,0,0.55);
+    opacity: 0;
+    transition: opacity .4s ease;
+  }
+
+  .pookalam-hover:hover .overlay {
+    opacity: 1;
+  }
+</style>
+```
