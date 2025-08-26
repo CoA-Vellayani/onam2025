@@ -1,144 +1,77 @@
 ---
 title: "Pookalam Regsitration"  
 toc: false
----
-
+---  
 ```{=html}
-<!-- Language toggle (Malayalam / English) — drop-in HTML block for Quarto -->
-<div class="lang-card" id="onam-lang-card">
-  <div class="lang-toolbar" role="tablist" aria-label="Language toggle">
-    <button class="lang-btn is-active" role="tab" aria-selected="true" data-lang="ml">മലയാളം</button>
-    <button class="lang-btn" role="tab" aria-selected="false" data-lang="en">English</button>
-  </div>
-
-  <!-- Malayalam -->
-  <div class="lang-content" data-lang="ml">
-    <p>ഓരോ ടീമും താഴെ നൽകിയിരിക്കുന്ന ഫോം ഉപയോഗിച്ച് രജിസ്റ്റർ ചെയ്യേണ്ടതാണ്. ഓരോ ടീമിലും <strong>10 അംഗങ്ങൾ</strong> ഉണ്ടായിരിക്കണം, കൂടാതെ ഓരോ അംഗത്തിന്റെ <strong>പേര്</strong> എന്നിവയും നൽകണം. <strong>ടീം ക്യാപ്റ്റന്റെ പേര് ആദ്യം എഴുതണം</strong>, കൂടാതെ ക്യാപ്റ്റന്റെ <strong>മൊബൈൽ നമ്പർ ശരിയായതായിരിക്കണം</strong>.</p>
-    <p>ടീമുകൾ നിങ്ങളുടെ ഇഷ്ടാനുസരണം രൂപീകരിക്കാവുന്നതാണ്. <strong>മത്സരത്തിന്റെ നിയമങ്ങൾ ഉടൻ അറിയിച്ചുതരുന്നതായിരിക്കും</strong>, രജിസ്റ്റർ ചെയ്ത ടീമുകൾക്ക് ബന്ധപ്പെട്ട വിവരം നൽകും.</p>
-  </div>
-
-  <!-- English -->
-  <div class="lang-content" data-lang="en" hidden>
-    <p>Each team is required to register using the form provided below. Every team must consist of <strong>10 members</strong> and should submit both the <strong>name</strong> of each participant. The <strong>team captain’s name must be entered first</strong>, and the captain’s <strong>mobile number must be valid</strong> for communication purposes.</p>
-    <p>Teams can be formed in any manner according to your interest and convenience. <strong>The rules of the competition will be updated soon</strong>, and all registered teams will be notified accordingly.</p>
-  </div>
-</div>
-
 <style>
-  .lang-card{
-    --brand:#6b46c1;
-    --ink:#111827;
-    --muted:#6b7280;
-    background:#fff;
-    border:1px solid #eee;
-    border-radius:16px;
-    box-shadow:0 8px 24px rgba(0,0,0,.06);
-    padding:clamp(12px,2.5vw,20px);
-    max-width:900px;
-    margin-inline:auto;
+  .teamlist {
+    max-width: 900px;
+    margin: 40px auto;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    overflow: hidden;
   }
-  .lang-toolbar{
-    display:flex; gap:8px; flex-wrap:wrap;
-    margin-bottom:12px;
+  .teamlist th {
+    background: #e68a00;
+    color: #fff;
+    text-align: left;
+    padding: 12px 16px;
+    font-size: 1rem;
   }
-  .lang-btn{
-    appearance:none; border:1px solid #e6e6e6;
-    background:#f8f8ff;
-    color:#333; font-weight:600;
-    border-radius:999px; padding:.55rem .9rem;
-    cursor:pointer;
-    transition:background .2s ease, color .2s ease, border-color .2s ease, transform .06s ease;
+  .teamlist td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #f1f1f1;
   }
-  .lang-btn:hover{ transform:translateY(-1px); }
-  .lang-btn.is-active{
-    background:linear-gradient(135deg, var(--brand), #9f7aea);
-    color:#fff; border-color:transparent;
-    box-shadow:0 6px 18px rgba(107,70,193,.3);
+  .teamlist tr:nth-child(even) {
+    background: #fff7ef;
   }
-  .lang-content p{
-    margin:.6rem 0 0;
-    line-height:1.6;
-    color:var(--ink);
+  .teamlist tr:hover {
+    background: #ffe1b3;
   }
-  @media (max-width:600px){
-    .lang-card{ border-radius:14px; padding:14px; }
-    .lang-btn{ flex:1; text-align:center; }
+  .teamlist caption {
+    caption-side: top;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #b36b00;
   }
 </style>
 
-<script>
-  (function(){
-    const card = document.getElementById('onam-lang-card');
-    const btns = card.querySelectorAll('.lang-btn');
-    const panes = card.querySelectorAll('.lang-content');
+<table class="teamlist">
+  <caption>🌸 Final Team List – Onam Pookkalam Competition 🌸</caption>
+  <thead>
+    <tr>
+      <th>Sl.No</th>
+      <th>Team Name</th>
+      <th>Captain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Teachers team</td><td>Pratheesh P Gopinath</td></tr>
+    <tr><td>2</td><td>SOLDIERS</td><td>ANIL TP</td></tr>
+    <tr><td>3</td><td>Department of Entomology</td><td>Aswathy J</td></tr>
+    <tr><td>4</td><td>മേളം</td><td>Banka Vaishnavi</td></tr>
+    <tr><td>5</td><td>അത്തം പത്ത്</td><td>Vandana devi S</td></tr>
+    <tr><td>6</td><td>തരംഗം</td><td>Alosious Joy</td></tr>
+    <tr><td>7</td><td>Farm labourers</td><td>Arun raj r</td></tr>
+    <tr><td>8</td><td>തിരുവോണത്തളിർ</td><td>Ruksana R S</td></tr>
+    <tr><td>9</td><td>Mannil virinja pookalam</td><td>Jaya Joseph</td></tr>
+    <tr><td>10</td><td>2024 Batch</td><td>Afishek Krishna</td></tr>
+    <tr><td>11</td><td>Engineering & Electrical Sub Division</td><td>AKHIL T K</td></tr>
+    <tr><td>12</td><td>Akhira</td><td>Sunusha S</td></tr>
+    <tr><td>13</td><td>Department of Plant Pathology</td><td>Govindh A. Nair</td></tr>
+    <tr><td>14</td><td>Agri Stat</td><td>Adarsh V S</td></tr>
+    <tr><td>15</td><td>Team Extension</td><td>Soorya P V</td></tr>
+    <tr><td>16</td><td>PRRAL</td><td>Vishnu V A</td></tr>
+    <tr><td>17</td><td>Microflora</td><td>A.S. Devika</td></tr>
+    <tr><td>18</td><td>Department of Postharvest Management</td><td>Lakshmi S R</td></tr>
+  </tbody>
+</table>
+```  
 
-    // Restore last choice if present
-    const saved = localStorage.getItem('onam_lang') || 'ml';
-    showLang(saved);
-
-    btns.forEach(b => {
-      b.addEventListener('click', () => showLang(b.dataset.lang));
-      b.addEventListener('keydown', (e) => {
-        if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); showLang(b.dataset.lang); }
-      });
-    });
-
-    function showLang(code){
-      panes.forEach(p => p.hidden = p.dataset.lang !== code);
-      btns.forEach(b => {
-        const active = b.dataset.lang === code;
-        b.classList.toggle('is-active', active);
-        b.setAttribute('aria-selected', active ? 'true' : 'false');
-      });
-      localStorage.setItem('onam_lang', code);
-    }
-  })();
-</script>
-
-<div style="margin-top:2rem; margin-bottom:2rem;"></div>
-```
-
-## Fill the form for registration {.unnumbered}
-
-Last date of registration: August 26, 03:00 pm
-
-```{=html}
-<!-- Embed Google Form — responsive + mobile-friendly -->
-<div class="form-embed">
-  <iframe 
-    src="https://docs.google.com/forms/d/e/1FAIpQLSeNLZFZpJ_ZxXMV4Ij3wOMWBHLiwcUkuP7qeWbmCL5lRExicw/viewform?embedded=true" 
-    frameborder="0" 
-    marginheight="0" 
-    marginwidth="0" 
-    loading="lazy" 
-    allowfullscreen>
-    Loading…
-  </iframe>
-</div>
-
-<style>
-  .form-embed{
-    position:relative;
-    width:100%;
-    max-width:800px;   /* centers nicely on large screens */
-    margin-inline:auto;
-    border-radius:16px;
-    overflow:hidden;
-    box-shadow:0 8px 24px rgba(0,0,0,.08);
-    background:#fff;
-  }
-  .form-embed iframe{
-    display:block;
-    width:100%;
-    height:90vh;       /* fills viewport height for mobile */
-    min-height:720px;  /* fallback for desktops */
-    border:0;
-  }
-  @media (max-width:600px){
-    .form-embed iframe{ height:100vh; min-height:600px; }
-  }
-</style>
-```
 
 ## Pookalam Rules {.unnumbered}
 

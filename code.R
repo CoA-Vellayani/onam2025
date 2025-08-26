@@ -1,0 +1,135 @@
+# <!-- ```{=html} -->
+#   <!-- <!-- Language toggle (Malayalam / English) — drop-in HTML block for Quarto --> -->
+#   <!-- <div class="lang-card" id="onam-lang-card"> -->
+#     <!--   <div class="lang-toolbar" role="tablist" aria-label="Language toggle"> -->
+#       <!--     <button class="lang-btn is-active" role="tab" aria-selected="true" data-lang="ml">മലയാളം</button> -->
+#         <!--     <button class="lang-btn" role="tab" aria-selected="false" data-lang="en">English</button> -->
+#           <!--   </div> -->
+#           
+#           <!--   <!-- Malayalam --> -->
+#           <!--   <div class="lang-content" data-lang="ml"> -->
+#             <!--     <p>ഓരോ ടീമും താഴെ നൽകിയിരിക്കുന്ന ഫോം ഉപയോഗിച്ച് രജിസ്റ്റർ ചെയ്യേണ്ടതാണ്. ഓരോ ടീമിലും <strong>10 അംഗങ്ങൾ</strong> ഉണ്ടായിരിക്കണം, കൂടാതെ ഓരോ അംഗത്തിന്റെ <strong>പേര്</strong> എന്നിവയും നൽകണം. <strong>ടീം ക്യാപ്റ്റന്റെ പേര് ആദ്യം എഴുതണം</strong>, കൂടാതെ ക്യാപ്റ്റന്റെ <strong>മൊബൈൽ നമ്പർ ശരിയായതായിരിക്കണം</strong>.</p> -->
+#             <!--     <p>ടീമുകൾ നിങ്ങളുടെ ഇഷ്ടാനുസരണം രൂപീകരിക്കാവുന്നതാണ്. <strong>മത്സരത്തിന്റെ നിയമങ്ങൾ ഉടൻ അറിയിച്ചുതരുന്നതായിരിക്കും</strong>, രജിസ്റ്റർ ചെയ്ത ടീമുകൾക്ക് ബന്ധപ്പെട്ട വിവരം നൽകും.</p> -->
+#             <!--   </div> -->
+#             
+#             <!--   <!-- English --> -->
+#             <!--   <div class="lang-content" data-lang="en" hidden> -->
+#               <!--     <p>Each team is required to register using the form provided below. Every team must consist of <strong>10 members</strong> and should submit both the <strong>name</strong> of each participant. The <strong>team captain’s name must be entered first</strong>, and the captain’s <strong>mobile number must be valid</strong> for communication purposes.</p> -->
+#               <!--     <p>Teams can be formed in any manner according to your interest and convenience. <strong>The rules of the competition will be updated soon</strong>, and all registered teams will be notified accordingly.</p> -->
+#               <!--   </div> -->
+#               <!-- </div> -->
+#               
+#               <!-- <style> -->
+#               <!--   .lang-card{ -->
+#                   <!--     --brand:#6b46c1; -->
+#                   <!--     --ink:#111827; -->
+#                   <!--     --muted:#6b7280; -->
+#                   <!--     background:#fff; -->
+#                   <!--     border:1px solid #eee; -->
+#                 <!--     border-radius:16px; -->
+#                   <!--     box-shadow:0 8px 24px rgba(0,0,0,.06); -->
+#                   <!--     padding:clamp(12px,2.5vw,20px); -->
+#                   <!--     max-width:900px; -->
+#                   <!--     margin-inline:auto; -->
+#                   <!--   } -->
+#               <!--   .lang-toolbar{ -->
+#                   <!--     display:flex; gap:8px; flex-wrap:wrap; -->
+#                   <!--     margin-bottom:12px; -->
+#                   <!--   } -->
+#               <!--   .lang-btn{ -->
+#                   <!--     appearance:none; border:1px solid #e6e6e6; -->
+#                 <!--     background:#f8f8ff; -->
+#                   <!--     color:#333; font-weight:600; -->
+#                   <!--     border-radius:999px; padding:.55rem .9rem; -->
+#                   <!--     cursor:pointer; -->
+#                   <!--     transition:background .2s ease, color .2s ease, border-color .2s ease, transform .06s ease; -->
+#                   <!--   } -->
+#               <!--   .lang-btn:hover{ transform:translateY(-1px); } -->
+#               <!--   .lang-btn.is-active{ -->
+#                   <!--     background:linear-gradient(135deg, var(--brand), #9f7aea); -->
+#                                                       <!--     color:#fff; border-color:transparent; -->
+#                                                         <!--     box-shadow:0 6px 18px rgba(107,70,193,.3); -->
+#                                                         <!--   } -->
+#               <!--   .lang-content p{ -->
+#                   <!--     margin:.6rem 0 0; -->
+#                   <!--     line-height:1.6; -->
+#                   <!--     color:var(--ink); -->
+#                   <!--   } -->
+#               <!--   @media (max-width:600px){ -->
+#                   <!--     .lang-card{ border-radius:14px; padding:14px; } -->
+#                   <!--     .lang-btn{ flex:1; text-align:center; } -->
+#                   <!--   } -->
+#               <!-- </style> -->
+#               
+#               <!-- <script> -->
+#               <!--   (function(){ -->
+#                   <!--     const card = document.getElementById('onam-lang-card'); -->
+#                     <!--     const btns = card.querySelectorAll('.lang-btn'); -->
+#                       <!--     const panes = card.querySelectorAll('.lang-content'); -->
+#                         
+#                         <!--     // Restore last choice if present -->
+#                         <!--     const saved = localStorage.getItem('onam_lang') || 'ml'; -->
+#                           <!--     showLang(saved); -->
+#                           
+#                           <!--     btns.forEach(b => { -->
+#                               <!--       b.addEventListener('click', () => showLang(b.dataset.lang)); -->
+#                               <!--       b.addEventListener('keydown', (e) => { -->
+#                                   <!--         if(e.key === 'Enter' || e.key === ' ') { e.preventDefault(); showLang(b.dataset.lang); } -->
+#                                   <!--       }); -->
+#                               <!--     }); -->
+#                           
+#                           <!--     function showLang(code){ -->
+#                               <!--       panes.forEach(p => p.hidden = p.dataset.lang !== code); -->
+#                               <!--       btns.forEach(b => { -->
+#                                   <!--         const active = b.dataset.lang === code; -->
+#                                     <!--         b.classList.toggle('is-active', active); -->
+#                                     <!--         b.setAttribute('aria-selected', active ? 'true' : 'false'); -->
+#                                     <!--       }); -->
+#                               <!--       localStorage.setItem('onam_lang', code); -->
+#                               <!--     } -->
+#                           <!--   })(); -->
+#               <!-- </script> -->
+#               
+#               <!-- <div style="margin-top:2rem; margin-bottom:2rem;"></div> -->
+#                 <!-- ``` -->
+#                 
+#                 <!-- ## Fill the form for registration {.unnumbered} -->
+#                 
+#                 <!-- Last date of registration: August 26, 03:00 pm -->
+#                 
+#                 <!-- ```{=html} -->
+#                 <!-- <!-- Embed Google Form — responsive + mobile-friendly --> -->
+#                 <!-- <div class="form-embed"> -->
+#                   <!--   <iframe  -->
+#                   <!--     src="https://docs.google.com/forms/d/e/1FAIpQLSeNLZFZpJ_ZxXMV4Ij3wOMWBHLiwcUkuP7qeWbmCL5lRExicw/viewform?embedded=true"  -->
+#                     <!--     frameborder="0"  -->
+#                       <!--     marginheight="0"  -->
+#                         <!--     marginwidth="0"  -->
+#                           <!--     loading="lazy"  -->
+#                             <!--     allowfullscreen> -->
+#                             <!--     Loading… -->
+#                             <!--   </iframe> -->
+#                             <!-- </div> -->
+#                             
+#                             <!-- <style> -->
+#                             <!--   .form-embed{ -->
+#                                 <!--     position:relative; -->
+#                                 <!--     width:100%; -->
+#                                 <!--     max-width:800px;   /* centers nicely on large screens */ -->
+#                                 <!--     margin-inline:auto; -->
+#                                 <!--     border-radius:16px; -->
+#                                 <!--     overflow:hidden; -->
+#                                 <!--     box-shadow:0 8px 24px rgba(0,0,0,.08); -->
+#                                 <!--     background:#fff; -->
+#                                 <!--   } -->
+#                             <!--   .form-embed iframe{ -->
+#                                 <!--     display:block; -->
+#                                 <!--     width:100%; -->
+#                                 <!--     height:90vh;       /* fills viewport height for mobile */ -->
+#                                 <!--     min-height:720px;  /* fallback for desktops */ -->
+#                                 <!--     border:0; -->
+#                                 <!--   } -->
+#                             <!--   @media (max-width:600px){ -->
+#                                 <!--     .form-embed iframe{ height:100vh; min-height:600px; } -->
+#                                 <!--   } -->
+#                             # <!-- </style> -->  
