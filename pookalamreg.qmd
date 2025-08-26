@@ -50,7 +50,7 @@ toc: false
     </tr>
   </thead>
   <tbody>
-    <tr><td>1</td><td>Teachers team</td><td>Pratheesh P Gopinath</td></tr>
+    <tr><td>1</td><td>Teachers team</td><td>Gopika Somanath</td></tr>
     <tr><td>2</td><td>SOLDIERS</td><td>ANIL TP</td></tr>
     <tr><td>3</td><td>Department of Entomology</td><td>Aswathy J</td></tr>
     <tr><td>4</td><td>മേളം</td><td>Banka Vaishnavi</td></tr>
