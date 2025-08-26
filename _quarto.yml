@@ -20,7 +20,12 @@ website:
       - text: Registrations
         menu:
           - text: Pookalam Registration
-            href: pookalamreg.qmd  
+            href: pookalamreg.qmd 
+          - text: Cultural Registration
+            href: culturalreg.qmd 
+      - text: Programmes
+        href: Programmelist.qmd
+     
   page-footer:
     left: |
       © 2025 by <a href="https://coavellayani.kau.in/">College of Agriculture, Vellayani</a><br>

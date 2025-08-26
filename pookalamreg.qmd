@@ -1,9 +1,9 @@
 ---
 title: "Pookalam Regsitration"  
 toc: false
----  
+---
 
-```{=html}  
+```{=html}
 <!-- Language toggle (Malayalam / English) — drop-in HTML block for Quarto -->
 <div class="lang-card" id="onam-lang-card">
   <div class="lang-toolbar" role="tablist" aria-label="Language toggle">
@@ -96,10 +96,11 @@ toc: false
 </script>
 
 <div style="margin-top:2rem; margin-bottom:2rem;"></div>
-``` 
-## Fill the form for registration {.unnumbered}  
+```
 
-Last date of registration: August 26, 11:00 am  
+## Fill the form for registration {.unnumbered}
+
+Last date of registration: August 26, 03:00 pm
 
 ```{=html}
 <!-- Embed Google Form — responsive + mobile-friendly -->
@@ -137,12 +138,11 @@ Last date of registration: August 26, 11:00 am
     .form-embed iframe{ height:100vh; min-height:600px; }
   }
 </style>
-```   
-
+```
 
 ## Pookalam Rules {.unnumbered}
 
-```{=html}  
+```{=html}
 <!-- Register Button -->
 <div class="register-btn-wrap">
   <a href="pookalamrules.html" class="register-btn">നിയമങ്ങൾ കാണാൻ ക്ലിക്ക് ചെയ്യുക/Rules</a>
@@ -172,5 +172,4 @@ Last date of registration: August 26, 11:00 am
     transform:translateY(-2px);
   }
 </style>
-```  
-
+```

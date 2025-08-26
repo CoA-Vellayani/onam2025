@@ -1,0 +1,99 @@
+---
+title: "Onam Celebration"
+format: html
+---
+
+```{=html}
+<style>
+  :root{
+    --brand:#e68a00; --brand-2:#b36b00; --bg:#fffaf3; --ink:#222;
+  }
+  body{ font-family: system-ui,-apple-system,"Segoe UI",Roboto,Inter,Arial,sans-serif; background:var(--bg); margin:0; color:var(--ink); }
+  .hero{
+    text-align:center; padding:42px 18px;
+    background:linear-gradient(180deg,var(--brand) 0%, var(--brand-2) 100%); color:#fff;
+  }
+  .hero img{ max-width:280px; border-radius:16px; box-shadow:0 10px 24px rgba(0,0,0,.25); }
+  .hero h1{ font-size:2.4rem; margin:18px 0 8px; }
+  .tag{ display:inline-block; background:#fff; color:#5a3b00; padding:6px 12px; border-radius:999px; font-weight:600; margin:8px 6px 0; }
+  .wrap{ max-width:980px; margin:48px auto; padding:0 18px; }
+  .cards{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; }
+  .card{ background:#fff; border-radius:14px; padding:18px; box-shadow:0 4px 14px rgba(0,0,0,.08); }
+  .card h3{ margin:4px 0 10px; color:var(--brand-2); font-size:1.15rem; }
+  .card p{ margin:6px 0; line-height:1.5; }
+
+  .notice{
+    border-left:6px solid var(--brand-2); background:#fff3e6; border-radius:10px; padding:14px 16px; margin:18px 0;
+  }
+  .notice strong{ color:#8a5200; }
+
+  .form-block{ margin-top:28px; }
+  .form-embed{
+    position:relative; padding-top:62vh; max-height:900px; border-radius:14px; overflow:hidden;
+    box-shadow:0 6px 18px rgba(0,0,0,.12); background:#fff; border:1px solid #f1e3d2;
+  }
+  .form-embed iframe{
+    position:absolute; inset:0; width:100%; height:100%; border:0;
+  }
+
+  .footer{ text-align:center; padding:26px 14px; margin-top:42px; background:#fff0e0; border-top:2px solid var(--brand-2); }
+</style>
+
+<!-- hero -->
+<div class="hero">
+  <img src="www/banner.webp" alt="Onam celebration banner">
+  <h1>Onam celebration 2025</h1>
+  <div>
+    <span class="tag">📅 Programme: 27 August • starts 8:00 AM</span>
+    <span class="tag">📍 Venue: Indoor stadium & nearby areas</span>
+  </div>
+</div>
+
+<!-- registration heading FIRST -->
+<div class="wrap">
+  <div class="card">
+    <h3>🎭 Cultural programme registration | കലാപരിപാടി രജിസ്ട്രേഷൻ</h3>
+    <p>
+      All those who wish to participate, please register using the form below.<br>
+      പരിപാടികളിൽ പങ്കെടുക്കാൻ ആഗ്രഹിക്കുന്നവർ ദയവായി താഴെയുള്ള ഫോമിൽ രജിസ്റ്റർ ചെയ്യുക.
+    </p>
+
+    <!-- embedded google form -->
+    <div class="form-block">
+      <div class="form-embed">
+        <iframe 
+          src="https://docs.google.com/forms/d/e/1FAIpQLScm11NGsT4O6s1NpnW9-5M_FAoRv1ZJGE3g-KHJP-dsHWlBDg/viewform?embedded=true" 
+          loading="lazy" allowfullscreen>
+          Loading…
+        </iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- then event details -->
+  <div class="cards" style="margin-top:30px;">
+    <div class="card">
+      <h3>Event details (English)</h3>
+      <p><strong>Date:</strong> 27 August</p>
+      <p><strong>Start time:</strong> 8:00 AM</p>
+      <p><strong>Venue:</strong> Indoor stadium and nearby areas</p>
+      <div class="notice">
+        <strong>Registration deadline:</strong> please register before <strong>6:00 PM today</strong>.
+      </div>
+    </div>
+    <div class="card">
+      <h3>പരിപാടി വിവരങ്ങൾ (Malayalam)</h3>
+      <p><strong>തീയതി:</strong> ഓഗസ്റ്റ് 27</p>
+      <p><strong>ആരംഭ സമയം:</strong> രാവിലെ 8:00</p>
+      <p><strong>വേദി:</strong> ഇൻഡോർ സ്റ്റേഡിയം & സമീപ പ്രദേശങ്ങൾ</p>
+      <div class="notice">
+        <strong>രജിസ്ട്രേഷൻ അവസാന സമയം:</strong> ഇന്ന് <strong>വൈകുന്നേരം 6:00</strong> മണിയ്ക്ക് മുമ്പ് രജിസ്റ്റർ ചെയ്യണം.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  🌼 wishing everyone a joyful and vibrant onam! 🌼
+</div>
+```
