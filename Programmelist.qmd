@@ -1,7 +1,74 @@
 ---
 title: "Onam Celebration"
 format: html
----
+---  
+```{=html}
+<!-- Cultural Events Schedule — Indoor Stadium Stage -->
+<style>
+  .ce-wrap{max-width:900px;margin:28px auto;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Inter,Arial,sans-serif;color:#222;padding:0 12px}
+  .ce-title{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin:0 0 12px}
+  .ce-title h2{margin:0;font-size:1.35rem;color:#b36b00}
+  .ce-venue{background:#fff3e6;border:1px solid #f1e3d2;color:#8a5200;padding:6px 10px;border-radius:999px;font-weight:600}
+  .ce-table{width:100%;border-collapse:separate;border-spacing:0;box-shadow:0 6px 18px rgba(0,0,0,.08);border-radius:12px;overflow:hidden}
+  .ce-table thead th{background:#e68a00;color:#fff;text-align:left;padding:12px 14px;font-weight:700}
+  .ce-table tbody td{padding:12px 14px;background:#fff;border-bottom:1px solid #f5efe7}
+  .ce-table tbody tr:nth-child(even) td{background:#fffaf3}
+  .ce-chip{display:inline-block;background:#1f6feb;color:#fff;padding:.25rem .6rem;border-radius:8px;font-weight:700;font-size:.92rem;white-space:nowrap}
+  .muted{opacity:.85}
+</style>
+
+<div class="ce-wrap">
+  <div class="ce-title">
+    <h2>🎭 Cultural Events Schedule, Onam -2025</h2>
+    <span class="ce-venue">Venue: Indoor Stadium Stage</span>
+  </div>
+
+  <table class="ce-table">
+    <thead>
+      <tr>
+        <th style="width:48px">Sl.No</th>
+        <th>Item</th>
+        <th>Performer / Group</th>
+        <th style="width:140px">Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td><td>Thiruvathira</td><td>Staff</td><td><span class="ce-chip">10:00 AM</span></td>
+      </tr>
+      <tr>
+        <td>2</td><td>Solo Song</td><td>ANOOP T A</td><td><span class="ce-chip">10:15 AM</span></td>
+      </tr>
+      <tr>
+        <td>3</td><td>Kaikottikali</td><td>Labourers</td><td><span class="ce-chip">10:25 AM</span></td>
+      </tr>
+      <tr>
+        <td>4</td><td>Solo Song</td><td>Sreerag MG</td><td><span class="ce-chip">10:35 AM</span></td>
+      </tr>
+      <tr>
+        <td>5</td><td>Group Song</td><td>Engineering & Electrical Sub Division</td><td><span class="ce-chip">10:45 AM</span></td>
+      </tr>
+      <tr>
+        <td>6</td><td>Solo Song</td><td>Jayakumaran. K</td><td><span class="ce-chip">10:55 AM</span></td>
+      </tr>
+      <tr>
+        <td>7</td><td>Kaikottikali</td><td>Staff</td><td><span class="ce-chip">11:00 AM</span></td>
+      </tr>
+      <tr>
+        <td>8</td><td>Solo Song</td><td>Shibu A</td><td><span class="ce-chip">11:15 AM</span></td>
+      </tr>
+      <tr>
+        <td>9</td><td>Cinematic Fusion Dance</td><td>Teachers</td><td><span class="ce-chip">11:20 AM</span></td>
+      </tr>
+      <tr>
+        <td>10</td><td>Group Song</td><td class="muted">Teachers</td><td><span class="ce-chip">11:35 AM</span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+```  
+
+
 ```{=html}
 <style>
   :root {
@@ -46,57 +113,57 @@ format: html
   <h2>Programme Schedule</h2>
   <div class="schedule">
     <table>
-      <tr>
-        <th>Time</th>
-        <th>Event (with Malayalam)</th>
-        <th>Venue</th>
-      </tr>
-      <tr>
-        <td>8:00 AM – 11:00 AM</td>
-        <td>Pookkalam Competition (പൂക്കളമത്സരം)</td>
-        <td>New Academic Block</td>
-      </tr>
-      <tr>
-        <td>8:30 AM</td>
-        <td>Malayali Manka (മലയാളി മങ്ക)</td>
-        <td>Indoor area</td>
-      </tr>
-      <tr>
-        <td>8:30 AM</td>
-        <td>Maveli Competition (മാവേലി മത്സരം)</td>
-        <td>Indoor area</td>
-      </tr>
-      <tr>
-        <td>11:00 AM</td>
-        <td>Kasera Kali (കസേരകളി)</td>
-        <td>Indoor area</td>
-      </tr>
-      <tr>
-        <td>11:30 AM</td>
-        <td>Lemon and Spoon (ലെമൺ & സ്പൂൺ)</td>
-        <td>Indoor area</td>
-      </tr>
-      <tr>
-        <td>12:00 PM</td>
-        <td>Chakilottam (ചക്കിലോട്ടം)</td>
-        <td>Indoor area</td>
-      </tr>
-      <tr>
-        <td>12:30 PM – 1:00 PM</td>
-        <td>Sundari Pottu Thodal (സുന്ദരി പൊട്ട് തൊടൽ)</td>
-        <td>Indoor area</td>
-      </tr>
-      <tr>
-        <td>2:30 PM</td>
-        <td>Vadam Vali (വടംവലി)</td>
-        <td>Indoor area</td>
-      </tr>
-      <tr>
-        <td>3:30 PM</td>
-        <td>Uriyadi (ഉറിയാടി)</td>
-        <td>Rain Tree</td>
-      </tr>
-    </table>
+  <tr>
+<th>Time</th>
+<th>Event (with Malayalam)</th>
+<th>Venue</th>
+  </tr>
+  <tr>
+<td>8:00 AM – 11:00 AM</td>
+<td>Pookkalam Competition (പൂക്കളമത്സരം)</td>
+<td>New Academic Block</td>
+  </tr>
+  <tr>
+<td>8:30 AM</td>
+<td>Malayali Manka (മലയാളി മങ്ക)</td>
+<td>Indoor area</td>
+  </tr>
+  <tr>
+<td>8:30 AM</td>
+<td>Maveli Competition (മാവേലി മത്സരം)</td>
+<td>Indoor area</td>
+  </tr>
+  <tr>
+<td>11:00 AM</td>
+<td>Kasera Kali (കസേരകളി)</td>
+<td>Indoor area</td>
+  </tr>
+  <tr>
+<td>11:30 AM</td>
+<td>Lemon and Spoon (ലെമൺ & സ്പൂൺ)</td>
+<td>Indoor area</td>
+  </tr>
+  <tr>
+<td>12:00 PM</td>
+<td>Chakilottam (ചക്കിലോട്ടം)</td>
+<td>Indoor area</td>
+  </tr>
+  <tr>
+<td>12:30 PM – 1:00 PM</td>
+<td>Sundari Pottu Thodal (സുന്ദരി പൊട്ട് തൊടൽ)</td>
+<td>Indoor area</td>
+  </tr>
+  <tr>
+<td>2:30 PM</td>
+<td>Vadam Vali (വടംവലി)</td>
+<td>Indoor area</td>
+  </tr>
+  <tr>
+<td>3:30 PM</td>
+<td>Uriyadi (ഉറിയാടി)</td>
+<td>Rain Tree</td>
+  </tr>
+</table>
   </div>
 
   <div class="info">
